@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Empaques que se convierten en hierbas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+        .bg-soft-beige { background-color: #fef7e8; }
+        .text-earth { color: #5a3e2b; }
+        .border-earth { border-color: #d4b48c; }
+        .hover-grow:hover { transform: scale(1.02); transition: transform 0.2s ease; }
+        .transition-smooth { transition: all 0.3s ease; }
+        .hero-gradient { background: linear-gradient(135deg, #f5f0e6 0%, #e8e0d3 100%); }
+        .step-icon { background-color: #2d6a4f; color: white; width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem auto; font-size: 1.8rem; }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm" style="background-color: rgba(255,255,255,0.95);">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="https://i.imgur.com/R0DND1d.jpeg" alt="Sembrika Logo" class="h-12 w-auto">
+                <span class="text-2xl font-serif font-semibold text-earth">Sembrika</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+                <a href="#inicio" class="hover:text-green-700" style="transition: color 0.2s;">Inicio</a>
+                <a href="#como-funciona" class="hover:text-green-700" style="transition: color 0.2s;">Cómo funciona</a>
+                <a href="#productos" class="hover:text-green-700" style="transition: color 0.2s;">Productos</a>
+                <a href="#impacto" class="hover:text-green-700" style="transition: color 0.2s;">Impacto</a>
+                <a href="#contacto" class="hover:text-green-700" style="transition: color 0.2s;">Contacto</a>
+            </nav>
+            <button id="menu-btn" class="block md:hidden text-2xl text-earth focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 px-6 pt-4 pb-6 shadow-lg">
+            <nav class="flex flex-col space-y-4 text-gray-700 font-medium">
+                <a href="#inicio" class="hover:text-green-700">Inicio</a>
+                <a href="#como-funciona" class="hover:text-green-700">Cómo funciona</a>
+                <a href="#productos" class="hover:text-green-700">Productos</a>
+                <a href="#impacto" class="hover:text-green-700">Impacto</a>
+                <a href="#contacto" class="hover:text-green-700">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="inicio" class="hero-gradient pt-16 pb-20 md:py-28">
+            <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12">
+                <div class="flex-1 text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold font-serif text-earth leading-tight">
+                        Si cuidar tu hogar y cuidar el planeta fuera la misma decisión,<br>
+                        <span class="text-green-800">¿Elegirías Sembrika?</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-700 mt-6 max-w-xl mx-auto md:mx-0">
+                        Empaques 100% biodegradables con semillas ocultas. Úsalos, plántalos y cosecha hierbas frescas en casa. Sin residuos y con propósito.
+                    </p>
+                </div>
+                <div class="flex-1 flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?auto=format&fit=crop&w=600&q=80" class="rounded-2xl shadow-2xl w-full max-w-md object-cover" alt="Sembrika empaques">
+                </div>
+            </div>
+        </section>
+
+        <!-- PREGUNTA DETONANTE -->
+        <section class="bg-soft-beige py-16">
+            <div class="container mx-auto px-6 text-center max-w-4xl">
+                <i class="fas fa-leaf text-5xl text-green-700 mb-4"></i>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-earth mb-6">
+                    "Si los empaques que llevas a tu casa tardan 400 años en desaparecer, ¿cuántos seguirán aquí cuando tus nietos tengan tu edad?"
+                </h2>
+                <p class="text-xl text-gray-700">En Sembrika creemos que un empaque debe volver a la tierra… <span class="font-semibold text-green-800">en forma de hierbas.</span></p>
+            </div>
+        </section>
+
+        <!-- CÓMO FUNCIONA -->
+        <section id="como-funciona" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-center text-earth mb-4">Cómo funciona</h2>
+                <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Cuatro pasos sencillos para transformar un residuo en vida</p>
+                <div class="grid md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="step-icon"><i class="fas fa-shopping-bag"></i></div>
+                        <h3 class="text-xl font-bold mt-4">1. Usa</h3>
+                        <p class="text-gray-600">Empaca tus alimentos o productos como siempre.</p>
+                    </div>
+                    <div>
+                        <div class="step-icon"><i class="fas fa-water"></i></div>
+                        <h3 class="text-xl font-bold mt-4">2. Activa</h3>
+                        <p class="text-gray-600">Humedece ligeramente para liberar las semillas.</p>
+                    </div>
+                    <div>
+                        <div class="step-icon"><i class="fas fa-seedling"></i></div>
+                        <h3 class="text-xl font-bold mt-4">3. Planta</h3>
+                        <p class="text-gray-600">Cúbrelo con tierra en una maceta o jardín.</p>
+                    </div>
+                    <div>
+                        <div class="step-icon"><i class="fas fa-utensils"></i></div>
+                        <h3 class="text-xl font-bold mt-4">4. Cosecha</h3>
+                        <p class="text-gray-600">En 2 a 3 semanas tendrás hierbas frescas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTOS -->
+        <section id="productos" class="py-20 bg-soft-beige">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-center text-earth mb-4">Nuestros empaques</h2>
+                <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Empaques ecológicos diseñados para el uso diario y para volver a la tierra.</p>
+                <div class="grid md:grid-cols-3 gap-8">
+
+                    <!-- ✅ TARJETA 1 CORREGIDA -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                        <img src="https://i.imgur.com/8XGMAvy.jpeg" class="w-full h-64 object-cover" alt="Manga para vaso">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-serif font-bold">Caja para crepas</h3>
+                            <p class="text-green-800 font-semibold mt-1">🌿 Con semillas</p>
+                            <p class="text-gray-600 mt-3">Protege tus manos y tu crepa de la suciedad y al final plántala para darle una segunda vida.</p>
+                        </div>
+                    </div>
+
+                    <!-- TARJETA 2 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                        <img src="https://i.imgur.com/2scfi2Y.png" class="w-full h-64 object-cover" alt="Caja cupcakes">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-serif font-bold">Caja para donas</h3>
+                            <p class="text-green-800 font-semibold mt-1">🌿 Con semillas</p>
+                            <p class="text-gray-600 mt-3">Empaque ideal para repostería que después puedes plantar en casa.</p>
+                        </div>
+                    </div>
+
+                    <!-- TARJETA 3 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                        <img src="https://i.imgur.com/kZO92sD.png" class="w-full h-64 object-cover" alt="Caja pasteles">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-serif font-bold">Fajilla para cafe</h3>
+                            <p class="text-green-800 font-semibold mt-1">🌿 Con semillas</p>
+                            <p class="text-gray-600 mt-3">Resistente y ecológica, diseñada para protegerte del calor de tu bebida y convertirse en planta.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- IMPACTO -->
+        <section id="impacto" class="py-16 text-white" style="background-color: #166534;">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-serif font-bold mb-8">Impacto real</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div>
+                        <div class="text-5xl font-bold">25 g</div>
+                        <p class="text-lg mt-2">de plástico evitado por empaque</p>
+                    </div>
+                    <div>
+                        <div class="text-5xl font-bold">2000+</div>
+                        <p class="text-lg mt-2">empaques plantados</p>
+                    </div>
+                    <div>
+                        <div class="text-5xl font-bold">100%</div>
+                        <p class="text-lg mt-2">biodegradable</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      <!-- CONTACTO -->
+<section id="contacto" class="py-20 bg-white">
+    <div class="container mx-auto px-6 max-w-4xl text-center">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-earth">
+            Contáctanos
+        </h2>
+
+        <p class="text-xl text-gray-600 mt-4">
+            Síguenos en nuestras redes sociales o escríbenos por correo electrónico.
+        </p>
+
+        <div class="mt-10 flex flex-col items-center gap-6">
+
+            <!-- Correo -->
+            <div class="flex items-center gap-3 text-lg">
+                <i class="fas fa-envelope text-green-700 text-2xl"></i>
+                <a href="mailto:empaquesecologicossembrika@gmail.com"
+                   class="text-green-700 hover:underline">
+                    empaquesecologicossembrika@gmail.com
+                </a>
+            </div>
+
+            <!-- Instagram -->
+            <div class="flex items-center gap-3 text-lg">
+                <i class="fab fa-instagram text-pink-600 text-2xl"></i>
+                <a href="https://instagram.com/sembrikka"
+                   target="_blank"
+                   class="hover:underline">
+                    @sembrikka
+                </a>
+            </div>
+
+            <!-- TikTok -->
+            <div class="flex items-center gap-3 text-lg">
+                <i class="fab fa-tiktok text-black text-2xl"></i>
+                <a href="https://tiktok.com/@sembrika"
+                   target="_blank"
+                   class="hover:underline">
+                    @sembrika
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+    <!-- FOOTER -->
+    <footer class="bg-soft-beige py-8 border-t border-gray-200">
+        <div class="container mx-auto px-6 text-center text-gray-500 text-sm">
+            © 2025 Sembrika. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        menuBtn.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
+
+        document.querySelectorAll("#mobile-menu a").forEach(link => {
+            link.addEventListener("click", () => mobileMenu.classList.add("hidden"));
+        });
+
+        const form = document.getElementById("newsletter-form");
+        const message = document.getElementById("form-message");
+
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const email = document.getElementById("email").value.trim();
+            if (!email) return;
+
+            message.textContent = "Enviando...";
+            message.style.color = "#6b7280";
+
+            const formData = new FormData();
+            formData.append("email", email);
+
+            try {
+                const res = await fetch("suscribir.php", { method: "POST", body: formData });
+                const data = await res.json();
+                message.textContent = data.mensaje;
+                message.style.color = data.ok ? "#15803d" : "#dc2626";
+                if (data.ok) form.reset();
+            } catch (err) {
+                message.textContent = "Error de conexión. Intenta más tarde.";
+                message.style.color = "#dc2626";
+            }
+        });
+    </script>
+
+</body>
+</html>
